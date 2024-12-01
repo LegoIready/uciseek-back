@@ -1,7 +1,7 @@
 import requests
-import json
+#import json
 
-from supabase_py import create_client
+from supabase import create_client
 
 import os
 from dotenv import load_dotenv, dotenv_values
@@ -15,8 +15,7 @@ supabase = create_client(supabase_url, supabase_key)
 
 def prompt_image(id):
     response = supabase.table('locations').select("url").eq("id", str(id)).execute()
-    #print(response)
-    return response["data"][0]["url"]
+    return response.data[0]["url"]
 
 import random
 numImages = 3

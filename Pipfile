@@ -4,13 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-supabase-py = "*"
 requests = "*"
 python-dotenv = "*"
 flask = "*"
 flask-cors = "*"
+supabase = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.10"
