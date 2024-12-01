@@ -43,8 +43,8 @@ def getByIDHelper(paramID):
         # Check and print the response to confirm data structure
         print("Full response from Supabase:", response)
 
-        if "data" in response and response["data"]:
-            return response["data"][0]
+        if response and response.data:
+            return response.data[0]
         
         print("No data found for the given ID:", paramID)
         return None
