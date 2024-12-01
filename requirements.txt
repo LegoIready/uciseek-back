@@ -1,4 +1,4 @@
-supabase-py
+supabase-py==0.0.2
 requests
 python-dotenv
 flask
